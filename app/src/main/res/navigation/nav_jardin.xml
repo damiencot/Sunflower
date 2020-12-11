@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_jardin"
+    app:startDestination="@id/pageAccueilFragment">
+
+    <fragment
+        android:id="@+id/pageAccueilFragment"
+        android:name="fr.nansty.sunflower.PageAccueilFragment"
+        android:label="fragment_page_accueil"
+        tools:layout="@layout/fragment_page_accueil" >
+        <action
+            android:id="@+id/action_pageAccueilFragment_to_detailPlanteFragment"
+            app:destination="@id/detailPlanteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPlanteFragment"
+        android:name="fr.nansty.sunflower.DetailPlanteFragment"
+        android:label="fragment_detail_plante"
+        tools:layout="@layout/fragment_detail_plante" />
+</navigation>
